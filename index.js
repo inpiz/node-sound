@@ -6,11 +6,11 @@ const port = 3000;
 app.use(cors())
 
 app.get('/', function (req, res) {
-    res.send(`node-sound. It is port ${port}`)
+    res.send(`node-sound-add. It is port ${port}`)
 })
 
 app.get('/user/:id', function (req, res) {
-    // const q = req.params
+    // const q = req.paramss
     // console.log(q.id)
     const q = req.query
     console.log(q)
@@ -36,6 +36,8 @@ app.get('/sound/:name', function (req, res) {
         res.json({'sound' : '야옹'})
     } else if(name == "pig") {
         res.json({'sound' : '꿀꿀'})
+    } else if(name == "lion") {
+        res.json({'sound' : '어헝'})    
     } else {
         res.json({'sound' : '얄수없음'})
     }
