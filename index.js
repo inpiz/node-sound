@@ -6,7 +6,7 @@ const port = 3000;
 app.use(cors())
 
 app.get('/', function (req, res) {
-    res.send(`Hello World. It is port ${port}`)
+    res.send(`node-sound. It is port ${port}`)
 })
 
 app.get('/user/:id', function (req, res) {
