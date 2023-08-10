@@ -31,15 +31,15 @@ app.get('/sound/:name', function (req, res) {
     console.log(name)
 
     if(name == "dog") {
-        res.json({'sound' : '명멍'})
+        res.json({'sound' : '명멍','img' : 'https://www.fitpetmall.com/wp-content/uploads/2023/02/CK_tc02730000546-edited-scaled.jpg'})
     } else if(name == "cat") {
-        res.json({'sound' : '야옹'})
+        res.json({'sound' : '야옹','img' : 'https://product.cdn.cevaws.com/var/storage/images/_aliases/reference/media/feliway-2017/images/kor-kr/1_gnetb-7sfmbx49emluey4a/6341829-1-kor-KR/1_gNETb-7SfMBX49EMLUeY4A.jpg'})
     } else if(name == "pig") {
-        res.json({'sound' : '꿀꿀'})
+        res.json({'sound' : '꿀꿀','img' : 'https://dimg.donga.com/wps/ECONOMY/IMAGE/2020/11/16/103972000.2.jpg'})
     } else if(name == "lion") {
-        res.json({'sound' : '어헝'})    
+        res.json({'sound' : '어헝','img' : 'https://blog.kakaocdn.net/dn/tBRuZ/btq3YL7AgQx/MDrI6QhKOrW4d1qjhq1jOk/img.png'})    
     } else {
-        res.json({'sound' : '얄수없음'})
+        res.json({'sound' : '얄수없음', 'img' : 'https://uic.yonsei.ac.kr/main/images/errorpage.jpg'})
     }
     
 })
